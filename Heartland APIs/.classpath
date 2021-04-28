@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/axis-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/castor-1.1.1-xml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/commons-pool-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/informatica-bpm-adapter.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/jboss-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/jcommander-1.78.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/mdm-spi.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/okhttp-3.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/okio-1.13.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/siperian-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/siperian-common.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/siperian-server.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hraja/OneDrive - Huron Consulting Group/Documents/Heartland Project/Project files/Heartland APIs/lib/mssql-jdbc-7.2.2.jre8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
