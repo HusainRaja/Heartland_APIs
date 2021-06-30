@@ -1,5 +1,8 @@
-package com.htfl.hraja.clean;
+package com.htlf.hraja.clean;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Properties;
 import java.util.Scanner;
 
@@ -13,7 +16,7 @@ public class CleanTables {
 	
 	static SoapSiperianClient sipClient = null;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		Scanner sc = new Scanner(System.in); 
 		//Tables which are to be cleaned.
@@ -37,7 +40,7 @@ public class CleanTables {
 					System.out.println("\nCleaning the table: "+tableName);
 					request.setSiperianObjectUid("BASE_OBJECT."+tableName);
 					CleanTableResponse response = (CleanTableResponse) sipClient.process(request);
-					System.out.println(response.getMessage());
+					System.out.println(response.getMessage()+"\n");
 				}
 				catch (Exception e) {
 					
@@ -52,15 +55,28 @@ public class CleanTables {
 		
 	}
 	
-	private static void initializeSipClient() {
+	private static void initializeSipClient() throws IOException {
+		System.out.println("Initializing the Soap Siperian Client");
+		
+		
+		FileReader fr = new FileReader("automation.properties");
+		
+		
 		Properties properties = new Properties();
-		properties.put(SiperianClient.SIPERIANCLIENT_PROTOCOL, "soap");
-		properties.put("siperian-client.orsId", "10.4.90.81-CUST_ORS");
-		properties.put("siperian-client.username", "admin");
-		properties.put("siperian-client.password", "admin");
-		properties.put("soap.call.url", "http://10.4.90.246:8080/cmx/services/SifService");
+		properties.load(fr);
+		/*
+		 * properties.put(SiperianClient.SIPERIANCLIENT_PROTOCOL, "soap");
+		 * properties.put(SoapSiperianClient.SOAP_CALL_TIMEOUT, "60000000");
+		 * properties.put("siperian-client.orsId", "10.4.90.81-CUST_ORS");
+		 * properties.put("siperian-client.username", "admin");
+		 * properties.put("siperian-client.password", "admin");
+		 * properties.put("soap.call.url",
+		 * "http://10.4.90.246:8080/cmx/services/SifService");
+		 */
         
-        sipClient = (SoapSiperianClient) SiperianClient.newSiperianClient(properties);
+        //sipClient = (SoapSiperianClient) SiperianClient.newSiperianClient(properties);
+		
+		sipClient = new SoapSiperianClient(properties);
 		
 	}
 
